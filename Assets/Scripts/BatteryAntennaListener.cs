@@ -31,7 +31,6 @@ public class BatteryAntennaListener : MonoBehaviour
     void FollowPlayer()
     {
         followPlayer = true;
-        GetComponent<Renderer>().material.color = Color.green;
     }
 
     void StopFollowingPlayer()

@@ -59,7 +59,7 @@ En este ejercicio se elige un objeto específico de la escena (en este caso, una
 ### Implementación
 Para lograr esta mecánica, se aplicó un patrón observador similar al de prácticas pasadas. La antena tiene asignado el script `Antenna_Notifier.cs`, el cual detecta la mirada del jugador con `OnPointerEnter` y dispara el evento `OnFollowPlayer` (lanzando `OnStopFollowingPlayer` al apartar la vista mediante `OnPointerExit`).
 
-Por su parte, el script `BatteryAntennaListener.cs` se encuentra en las baterías. Este script recupera la referencia de la antena y se suscribe a sus eventos. Al ser notificado de que la antena está siendo observada, la batería cambia el color de su material a verde, activa una bandera de seguimiento y, en el `FixedUpdate`, calcula el vector de dirección hacia el jugador para desplazarse mediante `rb.MovePosition` y orientarse con `rb.MoveRotation`.
+Por su parte, el script `BatteryAntennaListener.cs` se encuentra en las baterías. Este script recupera la referencia de la antena y se suscribe a sus eventos. Al ser notificado de que la antena está siendo observada, activa una bandera de seguimiento y, en el `FixedUpdate`, calcula el vector de dirección hacia el jugador para desplazarse mediante `rb.MovePosition` y orientarse con `rb.MoveRotation`.
 
 ### Ejecución
 
