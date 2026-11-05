@@ -4,7 +4,7 @@ public class Battery : MonoBehaviour
 {
     private Color inactiveLightColor;
     private Color activeLightColor;
-    private Light batteryLight; 
+    private Light batteryLight;
 
     void Start()
     {
@@ -12,7 +12,6 @@ public class Battery : MonoBehaviour
         inactiveLightColor = batteryLight.color;
         activeLightColor = new Color(1, 0, 0);
     }
-
 
     public void OnPointerEnter()
     {
@@ -26,6 +25,7 @@ public class Battery : MonoBehaviour
 
     public void OnPointerClick()
     {
-        Destroy(gameObject); 
+        gameObject.SetActive(false); 
     }
+
 }

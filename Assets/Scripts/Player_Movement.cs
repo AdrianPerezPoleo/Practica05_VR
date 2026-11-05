@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Movimiento_Jugador : MonoBehaviour
+public class Player_Movement : MonoBehaviour
 {
     public float speed = 2.0f;
     private Transform cameraTransform;
