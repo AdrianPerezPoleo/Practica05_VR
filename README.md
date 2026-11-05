@@ -22,7 +22,9 @@ La implementación de esta fase consistió en ajustar los *Build Settings* de Un
 ### Ejecución
 > En esta práctica he tenido que incrustar vídeos en vez de GIFs debido a su elevado tamaño.
 
-<video src="Videos/Ejercicio01.mp4" controls="controls" width="100%"></video>
+
+https://github.com/user-attachments/assets/4e0c6e9e-3aff-44fb-b686-0ec0d49f0146
+
 
 ## Ejercicio 02
 Los ficheros de código se encuentran en: 
@@ -40,7 +42,9 @@ Para el entorno, se construyó una escena utilizando elementos importados (simul
 Para la recolección, se configuraron una serie de baterías como objetos interactivos con el script `Battery.cs`. Haciendo uso del sistema de puntero de Cardboard, los métodos `OnPointerEnter` y `OnPointerExit` alteran el color de la luz de la batería a rojo cuando el jugador la está mirando. Si se acciona el trigger mientras se mira (`OnPointerClick`), el objeto se desactiva de la escena, simulando su recolección.
 
 ### Ejecución
-<video src="Videos/Ejercicio02.mp4" controls="controls" width="100%"></video>
+
+https://github.com/user-attachments/assets/ea1c2653-46ce-4114-bdc4-7188bd9411de
+
 
 ## Ejercicio 03
 Los ficheros de código se encuentran en: 
@@ -58,4 +62,5 @@ Para lograr esta mecánica, se aplicó un patrón observador similar al de prác
 Por su parte, el script `BatteryAntennaListener.cs` se encuentra en las baterías. Este script recupera la referencia de la antena y se suscribe a sus eventos. Al ser notificado de que la antena está siendo observada, la batería cambia el color de su material a verde, activa una bandera de seguimiento y, en el `FixedUpdate`, calcula el vector de dirección hacia el jugador para desplazarse mediante `rb.MovePosition` y orientarse con `rb.MoveRotation`.
 
 ### Ejecución
-<video src="Videos/Ejercicio03.mp4" controls="controls" width="100%"></video>
+
+https://github.com/user-attachments/assets/575b1e7b-da5a-492f-8f3b-ff6ac5def90d
