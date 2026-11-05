@@ -8,7 +8,7 @@ public class Battery : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        light = GetComponent<Light>();
+        light = GetComponentInChildren<Light>();
         inactiveLightColor = light.color;
         activeLightColor = new Color(0, 1, 0);
     }
