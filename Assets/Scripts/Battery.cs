@@ -4,27 +4,28 @@ public class Battery : MonoBehaviour
 {
     private Color inactiveLightColor;
     private Color activeLightColor;
-    private Light light;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Light batteryLight; 
+
     void Start()
     {
-        light = GetComponentInChildren<Light>();
-        inactiveLightColor = light.color;
-        activeLightColor = new Color(0, 1, 0);
+        batteryLight = GetComponentInChildren<Light>();
+        inactiveLightColor = batteryLight.color;
+        activeLightColor = new Color(1, 0, 0);
     }
+
 
     public void OnPointerEnter()
     {
-        light.color = activeLightColor;
+        batteryLight.color = activeLightColor;
     }
 
     public void OnPointerExit()
     {
-        light.color = activeLightColor;
+        batteryLight.color = inactiveLightColor;
     }
 
     public void OnPointerClick()
     {
-        
+        Destroy(gameObject); 
     }
 }
